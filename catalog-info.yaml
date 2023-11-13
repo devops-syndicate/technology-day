@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "technology-day"
+  annotations:
+    github.com/project-slug: "devops-syndicate/technology-day"
+    argocd/app-name: technology-day
+    backstage.io/techdocs-ref: dir:.
+  links:
+    - title: Link to ArgoCD
+      url: http://argo-cd.127.0.0.1.nip.io/applications/technology-day
+  tags:
+  - golang
+spec:
+  type: service
+  owner: team-b
+  lifecycle: production
+  providesApis:
+    - technology-day-api

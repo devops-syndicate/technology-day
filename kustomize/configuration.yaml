@@ -1,0 +1,10 @@
+images:
+- path: spec/components/properties/image
+  kind: Application
+  apiVersion: core.oam.dev/v1beta1
+nameReference:
+- kind: ConfigMap
+  fieldSpecs:
+  - kind: Application
+    apiVersion: core.oam.dev/v1beta1
+    path: spec/components/properties/env/valueFrom/configMapKeyRef/name
