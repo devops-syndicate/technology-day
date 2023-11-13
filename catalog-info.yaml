@@ -5,6 +5,9 @@ metadata:
   annotations:
     github.com/project-slug: "devops-syndicate/technology-day"
     argocd/app-name: technology-day
+    backstage.io/kubernetes-namespace: technology-day
+    backstage.io/kubernetes-id: technology-day
+    backstage.io/kubernetes-label-selector: 'app.oam.dev/name=technology-day'
     backstage.io/techdocs-ref: dir:.
   links:
     - title: Link to ArgoCD
